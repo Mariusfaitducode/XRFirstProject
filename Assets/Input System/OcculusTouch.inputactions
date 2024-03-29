@@ -1,0 +1,74 @@
+{
+    "name": "OcculusTouch",
+    "maps": [
+        {
+            "name": "RightController",
+            "id": "a67c65d4-e9c1-43b5-9412-1a3b495ddc16",
+            "actions": [
+                {
+                    "name": "A pressed",
+                    "type": "Button",
+                    "id": "334c6520-82cd-46cd-b892-72bffe28d6d0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "B pressed",
+                    "type": "Button",
+                    "id": "03329c5c-a751-460d-b16b-b5aff8d04480",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightTrigger",
+                    "type": "Value",
+                    "id": "581db29a-80e0-4a5e-80ee-94b9ae9f53cf",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3709d666-1b5a-4fe3-9c06-76f2887dea49",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "A pressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e65084fd-2d78-4a3f-94a5-bc3f2f1f5616",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B pressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a86f4302-64c6-4eb5-b546-a7c63bc5ad22",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
