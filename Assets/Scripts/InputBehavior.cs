@@ -9,6 +9,7 @@ public class InputsBehavior : MonoBehaviour
 {
 
     public Animator rightAnimator;
+    public Animator rightHandAnimator;
     public GameObject rightThumbstick;
 
     public void OnAPressed(InputAction.CallbackContext context)
@@ -71,6 +72,34 @@ public class InputsBehavior : MonoBehaviour
         }
     }
 
+    public void OnGripAxis(InputAction.CallbackContext context)
+    {
+        if (rightHandAnimator)
+        {
+            Debug.Log("Close hand");
+            rightHandAnimator.SetFloat("Close", context.ReadValue<float>());
+        }
+    }
+    public void OnTriggerTouch(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            if (rightHandAnimator)
+            {
+                Debug.Log("Pointing false");
+                rightHandAnimator.SetBool("Point", false);
+            }
+        }
+        if (context.canceled)
+        {
+            if (rightHandAnimator)
+            {
+                Debug.Log("Pointing true");
 
-    
+                rightHandAnimator.SetBool("Point", true);
+            }
+        }
+    }
+
+
 }
