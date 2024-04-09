@@ -11,6 +11,7 @@ public class InputsBehavior : MonoBehaviour
     public Animator rightAnimator;
     public Animator leftAnimator;
     public Animator rightHandAnimator;
+    public Animator leftHandAnimator;
     public GameObject rightThumbstick;
 
     public void OnAPressed(InputAction.CallbackContext context)
@@ -61,17 +62,17 @@ public class InputsBehavior : MonoBehaviour
         if (context.started)
         {
             Debug.Log("X Pressed");
-            if (rightAnimator)
+            if (leftAnimator)
             {
-                rightAnimator.SetBool("Xpressed", true);
+                leftAnimator.SetBool("Xpressed", true);
             }
         }
         if (context.canceled)
         {
-            Debug.Log("A Released");
-            if (rightAnimator)
+            Debug.Log("X Released");
+            if (leftAnimator)
             {
-                rightAnimator.SetBool("Xpressed", false);
+                leftAnimator.SetBool("Xpressed", false);
             }
         }
 
@@ -82,17 +83,17 @@ public class InputsBehavior : MonoBehaviour
         if (context.started)
         {
             Debug.Log("Y Pressed");
-            if (rightAnimator)
+            if (leftAnimator)
             {
-                rightAnimator.SetBool("Ypressed", true);
+                leftAnimator.SetBool("Ypressed", true);
             }
         }
         if (context.canceled)
         {
-            Debug.Log("B Released");
-            if (rightAnimator)
+            Debug.Log("Y Released");
+            if (leftAnimator)
             {
-                rightAnimator.SetBool("Ypressed", false);
+                leftAnimator.SetBool("Ypressed", false);
             }
         }
     }
@@ -102,6 +103,15 @@ public class InputsBehavior : MonoBehaviour
         if (rightAnimator)
         {
             rightAnimator.SetFloat("RightTrig", context.ReadValue<float>());
+        }
+    }
+
+    public void OnLeftTriggerAxis(InputAction.CallbackContext context)
+    {
+        if (leftAnimator)
+        {
+            Debug.Log("left trigger");
+            leftAnimator.SetFloat("LeftTrig", context.ReadValue<float>());
         }
     }
 

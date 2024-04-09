@@ -14,17 +14,17 @@ AvatarMask:
   - m_Path: left_quest2_controller_world
     m_Weight: 0
   - m_Path: left_quest2_controller_world/b_button_oculus
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: left_quest2_controller_world/b_button_x
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: left_quest2_controller_world/b_button_y
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: left_quest2_controller_world/b_thumbstick
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: left_quest2_controller_world/b_trigger_front
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: left_quest2_controller_world/b_trigger_grip
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: left_quest2_mesh
     m_Weight: 0
   - m_Path: right_quest2_controller_world

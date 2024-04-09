@@ -6,7 +6,7 @@ AvatarMask:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: A
+  m_Name: X
   m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   m_Elements:
   - m_Path: 
@@ -16,7 +16,7 @@ AvatarMask:
   - m_Path: left_quest2_controller_world/b_button_oculus
     m_Weight: 0
   - m_Path: left_quest2_controller_world/b_button_x
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: left_quest2_controller_world/b_button_y
     m_Weight: 0
   - m_Path: left_quest2_controller_world/b_thumbstick
@@ -30,7 +30,7 @@ AvatarMask:
   - m_Path: right_quest2_controller_world
     m_Weight: 0
   - m_Path: right_quest2_controller_world/b_button_a
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: right_quest2_controller_world/b_button_b
     m_Weight: 0
   - m_Path: right_quest2_controller_world/b_button_oculus
