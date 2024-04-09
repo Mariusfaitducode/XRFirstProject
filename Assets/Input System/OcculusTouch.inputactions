@@ -51,27 +51,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Left Thumbstick Clicked",
-                    "type": "Button",
-                    "id": "3edb4c6e-9cd1-4093-937a-b23ef235f7be",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Right Grab Pressed",
                     "type": "Button",
                     "id": "7bdd4227-e864-4a7f-a33c-e59fc1e2dc0c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Left Grab Pressed",
-                    "type": "Button",
-                    "id": "ab0b8318-a477-47c7-b0ce-2325c02618d7",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -154,34 +136,12 @@
                 },
                 {
                     "name": "",
-                    "id": "47ba66d3-09b5-4824-98c8-6f75e3a9a40a",
-                    "path": "<XRController>{LeftHand}/thumbstickClicked",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Left Thumbstick Clicked",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "4a60c068-b5cd-44fe-8529-3daa07e96c22",
                     "path": "<XRController>{RightHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Right Grab Pressed",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "fa50050b-9151-4277-a1ce-457b3ecfe647",
-                    "path": "<XRController>{LeftHand}/gripPressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Left Grab Pressed",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -204,6 +164,154 @@
                     "processors": "",
                     "groups": "",
                     "action": "Grip Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LeftController",
+            "id": "f025b3b4-8821-4648-8632-e81c6a8d847c",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "003caf06-11bf-4953-bfe6-3ec1f3b7a719",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Thumbstick Axis",
+                    "type": "Value",
+                    "id": "6737dc34-ee6e-4e1a-9461-91faa19c9976",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftTrigger",
+                    "type": "Value",
+                    "id": "220a8d3d-0c70-4391-9432-641e4c4edbd5",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "X pressed",
+                    "type": "Button",
+                    "id": "b381d86b-ac83-410f-898e-5835d6c9d780",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Y pressed",
+                    "type": "Button",
+                    "id": "136ce987-7182-4819-8409-0b1a75f1e6a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Thumbstick Clicked",
+                    "type": "Button",
+                    "id": "03fb1e6d-e822-4b8b-a688-fb24ffd358c0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Grab Pressed",
+                    "type": "Button",
+                    "id": "eadeb45d-8210-44ef-adaa-846fdd378780",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c0dd03f8-3652-4753-827f-84192eb34279",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "446811ac-a271-43cd-a714-70ca6650471a",
+                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Thumbstick Clicked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "be842b3b-ee8e-42bc-8837-d4f87988ecd1",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Grab Pressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e76b4244-6c92-4ec7-ac00-39ae57264521",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Y pressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b6ed135d-6626-466a-a4e3-1d9b3cfc0882",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "X pressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1dafcd03-2f22-410a-8e0b-df2113176dd6",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "478d5ce6-9145-4c97-b9ee-ee1061ff7311",
+                    "path": "<XRController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Thumbstick Axis",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

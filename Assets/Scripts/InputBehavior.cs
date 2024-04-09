@@ -9,6 +9,7 @@ public class InputsBehavior : MonoBehaviour
 {
 
     public Animator rightAnimator;
+    public Animator leftAnimator;
     public Animator rightHandAnimator;
     public GameObject rightThumbstick;
 
@@ -54,6 +55,48 @@ public class InputsBehavior : MonoBehaviour
         }
     }
 
+    public void OnXPressed(InputAction.CallbackContext context)
+    {
+
+        if (context.started)
+        {
+            Debug.Log("X Pressed");
+            if (rightAnimator)
+            {
+                rightAnimator.SetBool("Xpressed", true);
+            }
+        }
+        if (context.canceled)
+        {
+            Debug.Log("A Released");
+            if (rightAnimator)
+            {
+                rightAnimator.SetBool("Xpressed", false);
+            }
+        }
+
+
+    }
+    public void OnYPressed(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            Debug.Log("Y Pressed");
+            if (rightAnimator)
+            {
+                rightAnimator.SetBool("Ypressed", true);
+            }
+        }
+        if (context.canceled)
+        {
+            Debug.Log("B Released");
+            if (rightAnimator)
+            {
+                rightAnimator.SetBool("Ypressed", false);
+            }
+        }
+    }
+
     public void OnTriggerAxis(InputAction.CallbackContext context)
     {
         if (rightAnimator)
@@ -86,17 +129,17 @@ public class InputsBehavior : MonoBehaviour
         {
             if (rightHandAnimator)
             {
-                Debug.Log("Pointing false");
-                rightHandAnimator.SetBool("Point", false);
+                Debug.Log("Pointing true");
+                rightHandAnimator.SetBool("Point", true);
             }
         }
         if (context.canceled)
         {
             if (rightHandAnimator)
             {
-                Debug.Log("Pointing true");
+                Debug.Log("Pointing false");
 
-                rightHandAnimator.SetBool("Point", true);
+                rightHandAnimator.SetBool("Point", false);
             }
         }
     }
