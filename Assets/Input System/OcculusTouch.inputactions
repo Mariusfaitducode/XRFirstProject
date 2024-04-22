@@ -105,7 +105,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Trigger Touch",
+                    "name": "Right Trigger Touch",
                     "type": "Value",
                     "id": "9b1b97b9-4e3a-4f31-a904-7b0728624ae2",
                     "expectedControlType": "Axis",
@@ -114,9 +114,27 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Grip Axis",
+                    "name": "Right Grip Axis",
                     "type": "Value",
                     "id": "cc2dec2a-333e-49a3-9aed-1571baa33af9",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Left Trigger Touch",
+                    "type": "Value",
+                    "id": "00497b89-2d0a-41e8-ad1e-83cabf12383b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Left Grip Axis",
+                    "type": "Value",
+                    "id": "818a8494-450e-4090-815a-18dbb58bb395",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
@@ -197,7 +215,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Trigger Touch",
+                    "action": "Right Trigger Touch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -208,7 +226,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Grip Axis",
+                    "action": "Right Grip Axis",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -264,6 +282,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Left Grab Pressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8454c212-3c05-4a89-89e0-027c3462b028",
+                    "path": "<XRController>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "367f475a-9773-4b27-abb5-4bcf17da0261",
+                    "path": "<XRController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Grip Axis",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -15,6 +15,7 @@ public class InteractionBehavior: MonoBehaviour
         GrabbableBehavior gb = other.GetComponentInParent<GrabbableBehavior>();
         if (gb)
         {
+            Debug.Log(gb);
             overlappingGameObjects.Add(gb.gameObject.name, gb.gameObject);
         }
 

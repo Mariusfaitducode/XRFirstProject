@@ -5,14 +5,20 @@ using UnityEngine;
 public class ToggleGameObject : MonoBehaviour
 {
 
-    public GameObject gameObjectToToggle; 
+    public GameObject[] gameObjectToToggle; 
 
     public void Toggle()
     {
         
-        if (gameObjectToToggle)
+        if (gameObjectToToggle.Length > 0)
         {
-            gameObjectToToggle.SetActive(!gameObjectToToggle.activeSelf);
+
+            foreach(GameObject go in gameObjectToToggle)
+            {
+                go.SetActive(!go.activeSelf);
+
+            }
+
         }
     }
 }
