@@ -17,6 +17,10 @@ public class TeleporterBehavior : MonoBehaviour
 
     public float maxDistance = 5;
     public string floorTag = "Floor";
+    public GameObject platformObj;
+
+    private bool onPlatform = false;
+    private bool platformTarget = false;
 
     public GameObject player;
 
@@ -70,7 +74,17 @@ public class TeleporterBehavior : MonoBehaviour
         {
             if (canTeleport)
             {
+                onPlatform = false;
+
+                if (platformTarget)
+                {
+                    destinationPoint = platformObj.transform.position;
+                    onPlatform = true;
+                }
+
                 Teleport();
+
+                
             }
             HidePointer();
         }
@@ -79,6 +93,13 @@ public class TeleporterBehavior : MonoBehaviour
 
     private void FixedUpdate()
     {
+        platformTarget = false;
+
+        if (onPlatform)
+        {
+            player.transform.position = platformObj.transform.position;
+        }
+
         if (pointerVisible)
         {
             lineRenderer.SetPosition(0, transform.position);
@@ -93,11 +114,18 @@ public class TeleporterBehavior : MonoBehaviour
             }
 
 
-            if (hit.collider.gameObject.CompareTag(floorTag))
+            if (hit.collider && hit.collider.gameObject.CompareTag(floorTag))
             {
                 canTeleport = true;
                 lineRenderer.material = okMaterial;
                 destinationPoint = hit.point;
+
+                
+
+                if (hit.collider.gameObject == platformObj)
+                {
+                    platformTarget = true;
+                }
             }
             else
             {
